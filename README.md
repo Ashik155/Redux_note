@@ -55,3 +55,27 @@ Redux Cycle :
  <h3> We are not able to manually change the state object, we need to use action, action creator and reducers to do so </h3>
 
  <h1> React with Redux </h1>
+
+ <h2> Understading React Redux with Small App </h2>
+
+ When you are using Redux and React togethere, ofc we mostly using redux as state managment, so we mostly prefer to use function based component in most cases except some where we explicitly need to use state. 
+
+ React redux willl create a two new component Provider and Connect
+ We need to just Create an instance of them.
+
+ We have to pass our store as a props to the provider component which is above app component and will be rendering on top of app component.
+ In redux-react we mostly use Contex System for data communication instead using state from parent to child comm. We make it possible with Connect component.
+
+
+ <h2> Named vs Default Export <h2>
+
+ We can directly use export defualt syntax if there is only one specific export over there.
+ 
+ but if our file containes many classes or functions to be export, then we must use named export
+ you can use this syntx to access those.
+
+ import { namedexp1, namedExp2 } from "../src/actions";
+
+ <h2> How to use connect component or connect function </h2>
+
+ We need to use kind of helper function or we can say this fucn as mapStateToProp. 
